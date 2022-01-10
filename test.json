@@ -1,0 +1,13 @@
+{
+    "id": "46430462-954b-4968-b902-c60e2497443f",
+    "name": "RG-JSAN-SCUS",
+    "location": "southcentralus",
+    "tags": {
+        "Category": "JSAN",
+        "Network": "JSAN",
+        "Project": "1"
+    },
+    "properties": {
+        "provisioningState": "Succeeded"
+    }
+}
