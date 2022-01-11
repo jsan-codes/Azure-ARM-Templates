@@ -24,8 +24,8 @@ az deployment group create --name webappTEST --resource-group RG-NAME-SCUS --par
 az group create --name myResourceGroup --location "southcentralus" &&
 az deployment group create --resource-group myResourceGroup \
 --parameters language="html" helloWorld="true" webAppName="SHARPworl983" \
---template-uri "https://github.com/jsan-codes/Azure-ARM-Templates/blob/master/Azure-ARM-Templates/Azure-ARM-WebApp/ARM-Webapp/ARM-Webapp.json"
+--template-uri "https://github.com/jsan-codes/Azure-ARM-Templates/blob/master/Azure-ARM-Templates/Azure-ARM-WebApp/ARM-Webapp/LinuxWebbApp.json"
 
-az deployment group create --resource-group myResourceGroup --parameters language="html" helloWorld="true" webAppName="SHARPworl983" --template-uri "https://github.com/jsan-codes/Azure-ARM-Templates/blob/master/Azure-ARM-Templates/Azure-ARM-WebApp/ARM-Webapp/ARM-Webapp.json"
+az deployment group create --resource-group myResourceGroup --parameters language="html" helloWorld="true" webAppName="SHARPworl983" --template-uri "https://github.com/jsan-codes/Azure-ARM-Templates/blob/master/Azure-ARM-Templates/Azure-ARM-WebApp/ARM-Webapp/LinuxWebbApp.json"
 
 
