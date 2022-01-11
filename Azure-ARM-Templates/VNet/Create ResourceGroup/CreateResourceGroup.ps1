@@ -1,13 +1,20 @@
-
 <#
  .SYNOPSIS
-    Template for creating Resource Group
+    Deploys a template to Azure
 #>
 
 $subscriptionId = "46430462-954b-4968-b902-c60e2497443f" #insert your subscription ID
-$resourceGroupName = "RG-JSAN-SCUS"  #provide resource group name
+$resourceGroupName = "RG-SHARP-SCUS"  #provide resource group name
 $resourceGroupLocation = "SouthCentralUS"  #location
-$tags = @{"Category"=“JSAN"; "Network"=“JSAN"; "Project"=“1"} 
+$tags = @{"Category"="SHARP"; "Network"="Army"; "Project"="Training"}
+
+
+# The below  file can be used if the templates are stored locally 
+# $templateFilePath = "ContosoFinance-Demo-ARM\ARM-Templates\template.json"
+# $parametersFilePath = "ContosoFinance-Demo-ARM\ARM-Templates\paramters.json"
+
+#$templateFileURI = 'https://raw.template.json'
+#$parametersFileURI = 'https://raw.paramters.json'
 
 
 Function RegisterRP {
@@ -26,7 +33,7 @@ Function RegisterRP {
 $ErrorActionPreference = "Stop"
 
 # sign in
-Connect-AzAccount
+#Connect-AzAccount
 
 # select subscription
 Write-Host "Selecting subscription '$subscriptionId'";
@@ -56,31 +63,4 @@ if(!$resourceGroup)
 }
 else{
     Write-Host "***Using existing resource group '$resourceGroupName'";
-}
-
-
-
-
-
-
-
-# Start the deployment from Remote Template 
-Write-Host "Starting deployment from Github Repo...";
-New-AzResourceGroupDeployment -ResourceGroupName $resourceGroupName -TemplateUri $templateFileURI -TemplateParameterUri $parametersFileURI -Verbose;
-
-# OR
-
-
-
-
-
-
-
-# Start the deployment from Local File
-
-Write-Host "Starting deployment from Local Repo...";
-if(Test-Path $parametersFileURI) {
-    New-AzResourceGroupDeployment -ResourceGroupName $resourceGroupName -TemplateFile $templateFilePath -TemplateParameterUri $parametersFileURI -Verbose;
-} else {
-    New-AzResourceGroupDeployment -ResourceGroupName $resourceGroupName -TemplateFile $templateFilePath -Verbose;
 }
