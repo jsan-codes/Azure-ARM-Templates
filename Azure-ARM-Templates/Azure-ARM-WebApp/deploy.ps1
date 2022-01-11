@@ -18,8 +18,7 @@ az group create --name RG-NAME-SCUS --location "southcentralus"
 #Now that the RG is created, the script will deploy the webapp within the RG
 az deployment group create --resource-group RG-NAME-SCUS --name SHARPworl983 --template-file ARM-WebApp.json
 
-
-
+az webapp deployment user set --user-name headspace --password RAY!earth!01
 
 
 
