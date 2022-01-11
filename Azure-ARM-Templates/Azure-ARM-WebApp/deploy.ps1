@@ -16,12 +16,34 @@ az group create --name RG-NAME --location "southcentralus"
 
 az group create --name RG-NAME-SCUS --location "southcentralus"
 #Now that the RG is created, the script will deploy the webapp within the RG
-az deployment group create --name webappTEST --resource-group RG-NAME-SCUS --parameters language="html" helloWorld="true" webAppName="webappName" --template-uri "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/quickstarts/microsoft.web/app-service-docs-windows/azuredeploy.json"
+az deployment group create --resource-group RG-NAME-SCUS --name SHARPworl983 --template-file ARM-WebApp.json
 
 
 
 
-az group create --name myResourceGroup --location "southcentralus" &&
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+az deployment group create --resource-group RG-NAME-SCUS --name SHARPwordl983 --template-file LinuxWebbApp.json
+
+
+
 az deployment group create --resource-group myResourceGroup \
 --parameters language="html" helloWorld="true" webAppName="SHARPworl983" \
 --template-uri "https://github.com/jsan-codes/Azure-ARM-Templates/blob/master/Azure-ARM-Templates/Azure-ARM-WebApp/ARM-Webapp/LinuxWebbApp.json"
@@ -29,3 +51,5 @@ az deployment group create --resource-group myResourceGroup \
 az deployment group create --resource-group myResourceGroup --parameters language="html" helloWorld="true" webAppName="SHARPworl983" --template-uri "https://github.com/jsan-codes/Azure-ARM-Templates/blob/master/Azure-ARM-Templates/Azure-ARM-WebApp/ARM-Webapp/LinuxWebbApp.json"
 
 
+
+az deployment group create --resource-group RG-NAME-SCUS --name SHARPworl983 --template-file ARM-WebApp.json
