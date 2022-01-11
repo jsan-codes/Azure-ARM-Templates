@@ -14,8 +14,8 @@ $tags = @{"Category"=“JSAN"; "Network"=“JSAN"; "Project"=“1"}
 # $templateFilePath = "ContosoFinance-Demo-ARM\ARM-Templates\template.json"
 # $parametersFilePath = "ContosoFinance-Demo-ARM\ARM-Templates\paramters.json"
 
-$templateFileURI = 'https://raw.githubusercontent.com/SoniaConti/ContosoFinance-Demo/main/ContosoFinance-Demo-ARM/ARM-Templates/template.json'
-$parametersFileURI = 'https://raw.githubusercontent.com/SoniaConti/ContosoFinance-Demo/main/ContosoFinance-Demo-ARM/ARM-Templates/paramters.json'
+#$templateFileURI = 'https://raw.githubusercontent.com/SoniaConti/ContosoFinance-Demo/main/ContosoFinance-Demo-ARM/ARM-Templates/template.json'
+#$parametersFileURI = 'https://raw.githubusercontent.com/SoniaConti/ContosoFinance-Demo/main/ContosoFinance-Demo-ARM/ARM-Templates/paramters.json'
 
 
 Function RegisterRP {
