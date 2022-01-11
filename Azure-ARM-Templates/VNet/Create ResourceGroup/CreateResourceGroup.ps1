@@ -1,6 +1,6 @@
 <#
  .SYNOPSIS
-    Deploys a template to Azure.
+    Deploys a template to Azure
 #>
 
 $subscriptionId = "46430462-954b-4968-b902-c60e2497443f" #insert your subscription ID
