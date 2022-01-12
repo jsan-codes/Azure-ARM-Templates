@@ -7,3 +7,9 @@ az group create --name RG-JSAN-SCUS --location southcentralus --tags Category=JS
 
 
 az group delete --name exampleGroup
+
+
+
+az tag add-value --name
+                 --value
+                 [--46430462-954b-4968-b902-c60e2497443f]
