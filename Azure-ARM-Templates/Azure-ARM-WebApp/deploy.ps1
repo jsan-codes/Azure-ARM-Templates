@@ -6,14 +6,9 @@
 
 <# Run Selected code only, otherwise will fail#>
 az login #use device code
-az account set --subscription "46430462-954b-4968-b902-c60e2497443f"
-<#
-Only need to run this code once to create new Resource Group
-az group create --name RG-NAME --location "southcentralus"
-#>
 
-#az group create --name myResourceGroup --location "West Europe"
 
+az account set --subscription "46430462-954b-4968-b902-c60e2497443f" 
 az group create --name RG-NAME-SCUS --location "southcentralus"
 
 #Now that the RG is created, the script will deploy the webapp within the RG
@@ -40,6 +35,18 @@ git push azure main
 
 
 az webapp deployment user set --user-name headspace --password RAY!earth!01
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
